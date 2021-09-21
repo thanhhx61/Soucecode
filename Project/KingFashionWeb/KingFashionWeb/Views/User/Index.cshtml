@@ -1,0 +1,63 @@
+﻿@{ Layout = "~/Views/Shared/_ShopLayout.cshtml"; }
+
+<section class="bg0 p-t-104 p-b-116">
+    <div class="container">
+        <div class="flex-w flex-tr">
+            <div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
+                <form method="post">
+                    <h4 class="mtext-105 cl2 txt-center p-b-30">
+                        @*@ViewData["Title"]*@
+                    </h4>
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                    <label @*asp-for="Input.Ema"*@ class="stext-101"></label>
+                    <div class="bor8 m-b-20 how-pos4-parent">
+                        <input @*asp-for="Input.Email"*@ class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="email" placeholder="Email">
+                        <i class="how-pos4 pointer-none zmdi zmdi-email"></i>
+                    </div>
+                    <span @*asp-validation-for="Input.Email"*@ class="text-danger"></span>
+
+                    <label @*asp-for="Input.Password"*@ class="stext-101"></label>
+                    <div class="bor8 m-b-20 how-pos4-parent">
+                        <input @*asp-for="Input.Password"*@ class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="password">
+                        <i class="how-pos4 pointer-none zmdi zmdi-shield-security"></i>
+                    </div>
+                    <span @*asp-validation-for="Input.Password"*@ class="text-danger"></span>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label @*asp-for="Input.RememberMe"*@>
+                                <input @*asp-for="Input.RememberMe"*@ />
+                                @*@Html.DisplayNameFor(m => m.Input.RememberMe)*@
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 mr-2 trans-04 pointer">
+                            Login
+                        </button>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-5">
+                        <a @*id="forgot-password" asp-page="./ForgotPassword"*@ class="flex-c-m stext-102 cl0 size-121 bg1 bor1 hov-btn2 trans-02 pointer">
+                            Forgot your password?
+                        </a>
+                        <a @*asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl"*@ class="flex-c-m stext-102 cl2 size-121 bg2 bor1 hov-btn1 p-lr-15 ml-2 trans-04 pointer">
+                            Register as a new user
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md">
+                <img src="~/images/edit.jpg" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

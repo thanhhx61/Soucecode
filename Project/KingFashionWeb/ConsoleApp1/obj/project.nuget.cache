@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dCRvE79F1W2pNyNFM454DK3D+BN9gTefjb42HbUkP8p3iD47SgGZXOPhbGnGBl7pQz2ffo4r2BU5kWmJcFrARA==",
+  "success": true,
+  "projectFilePath": "E:\\Project\\KingFashionWeb\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}
